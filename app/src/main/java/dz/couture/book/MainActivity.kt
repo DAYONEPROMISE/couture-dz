@@ -18,15 +18,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.People
-import androidx.compose.material.icons.filled.ReceiptLong
-import androidx.compose.material.icons.filled.Straighten
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -115,7 +110,7 @@ private fun DzNavBar(dest: Int, onPick: (Int) -> Unit) {
             NavigationBarItem(
                 selected = dest == i,
                 onClick = { onPick(i) },
-                icon = { Icon(n.icon, contentDescription = null) },
+                icon = { Text(n.glyph) },
                 label = { Text(n.labelRes.let { stringResource(it) }) }
             )
         }
@@ -129,19 +124,19 @@ private fun NavRail(dest: Int, onPick: (Int) -> Unit) {
             NavigationRailItem(
                 selected = dest == i,
                 onClick = { onPick(i) },
-                icon = { Icon(n.icon, contentDescription = null) },
+                icon = { Text(n.glyph) },
                 label = { Text(stringResource(n.labelRes)) }
             )
         }
     }
 }
 
-private data class Nav(val labelRes: Int, val icon: androidx.compose.ui.graphics.vector.ImageVector)
+private data class Nav(val labelRes: Int, val glyph: String)
 
 private val NavItems = listOf(
-    Nav(R.string.nav_clients, Icons.Filled.People),
-    Nav(R.string.nav_orders, Icons.Filled.ReceiptLong),
-    Nav(R.string.nav_measures, Icons.Filled.Straighten),
+    Nav(R.string.nav_clients, "◉"),
+    Nav(R.string.nav_orders, "▤"),
+    Nav(R.string.nav_measures, "📏"),
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
