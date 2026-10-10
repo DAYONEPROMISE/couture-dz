@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">كوتيرديزد</string>
+    <string name="nav_clients">الزبائن</string>
+    <string name="nav_orders">الطلبات</string>
+    <string name="nav_measures">القياسات</string>
+    <string name="search_hint">ابحث عن زبون، قماش، موديل…</string>
+    <string name="clients_sub">الاسم، الهاتف، ملاحظات. محفوظة في Room، دون إنترنت تمامًا.</string>
+    <string name="orders_sub">القماش، الموديل، الأجل، السعر والعربون بالدج. الباقي = السعر − العربون.</string>
+    <string name="measures_sub">الصدر، الخصر، الورك، الكتف، الكم، الطول (سم).</string>
+    <string name="offline_note">دون إنترنت تمامًا — بلا حساب، البيانات على الجهاز.</string>
+    <string name="order_amounts">السعر %1$s · العربون %2$s · الباقي %3$s</string>
 </resources>
