@@ -5,9 +5,9 @@
     <string name="nav_orders">Commandes</string>
     <string name="nav_measures">Mesures</string>
     <string name="search_hint">Rechercher clients, tissus, modèles…</string>
-    <string name="clients_sub">Nom, téléphone, notes. Stockés en Room, 100% hors-ligne.</string>
+    <string name="clients_sub" formatted="false">Nom, téléphone, notes. Stockés en Room, 100% hors-ligne.</string>
     <string name="orders_sub">Tissu, modèle, deadline, prix et acompte en DZD. Reste = prix − acompte.</string>
     <string name="measures_sub">Poitrine, taille, hanches, épaule, manche, longueur (cm).</string>
-    <string name="offline_note">100% hors-ligne — sans compte, données sur l\'appareil.</string>
+    <string name="offline_note" formatted="false">100% hors-ligne — sans compte, données sur l\'appareil.</string>
     <string name="order_amounts">Prix %1$s · Acompte %2$s · Reste %3$s</string>
 </resources>
